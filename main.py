@@ -1,6 +1,6 @@
 from xunit.WasRun import WasRun
 
-test = WasRun("testResult")
+test = WasRun("testTemplateMethod")
 print(test.wasRun)
-test.testMethod()
+test.testFailedResultFormatting()
 print(test.wasRun)

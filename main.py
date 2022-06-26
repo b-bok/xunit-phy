@@ -1,6 +1,4 @@
+from xunit.TestCaseTest import TestCaseTest
 from xunit.WasRun import WasRun
 
-test = WasRun("testTemplateMethod")
-print(test.wasRun)
-test.testFailedResultFormatting()
-print(test.wasRun)
+print(TestCaseTest("testTemplateMethod").run().summary())

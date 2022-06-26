@@ -1,3 +1,5 @@
+from unittest import result
+
 from xunit.TestResult import TestResult
 
 
@@ -10,8 +12,7 @@ class TestCase:
         pass
 
     def run(self):
-        result = TestResult()
-        result.testStarted()
+        result.testStarted
         self.setUp()
         try:
             method = getattr(self, self.name)
@@ -24,8 +25,3 @@ class TestCase:
     def tearDown(self):
         pass
 
-    def testFailedResultFormatting(self):
-        result = TestResult()
-        result.testStarted()
-        result.testFailed()
-        assert ("1 run, 1 failed" == result.summary())

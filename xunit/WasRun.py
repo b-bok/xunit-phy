@@ -21,4 +21,5 @@ class WasRun(TestCase):
         method = getattr(self, self.name)
         method()
 
-
+    def testBrokenMethod(self):
+        raise Exception
